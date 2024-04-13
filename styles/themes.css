@@ -1,6 +1,72 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+:root.theme-dark {
+        --primary-font-weight-title: 785;
+        --primary-font-weight-text: 465;
+        --primary-background-color: #000;
+        --primary-text-color: #00cc14;
+        --primary-cover-image: url(../images/background_dark.png);
+        --primary-background-image: 
+        repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), 
+        repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+        linear-gradient(to bottom, #007f0c 0.01%, #004306);
+        --primary-border-color: #00cc14;
+        fill: #00cc14;
+        --primary-heart-contour-color: #00CC14;
+        --primary-heart-color: #ff0000;
+        --primary-hover-color: #00CC14;
+    }
+
+:root.theme-light {
+        --primary-font-weight-title: 700;
+        --primary-font-weight-text: 400;
+        --primary-background-color: #fff;
+        --primary-text-color: #000;
+        --primary-cover-image: url(../images/background_light.png);
+        --primary-background-image: 
+        repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px), 
+        repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+        --primary-border-color: #000;
+        fill: #000;
+        --primary-hover-color: #fff;
+        --primary-heart-contour-color: #000;
+        --primary-heart-color: #ff0000;
+    }
+
+@media (prefers-color-scheme: dark) {
+        :root {
+            --primary-font-weight-title: 785;
+            --primary-font-weight-text: 465;
+            --primary-background-color: #000;
+            --primary-text-color: #00cc14;
+            --primary-cover-image: url(../images/background_dark.png);
+            --primary-background-image: 
+        repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), 
+        repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+        linear-gradient(to bottom, #007f0c 0.01%, #004306);
+        --primary-border-color: #00cc14;
+        fill: #00cc14;
+        --primary-heart-contour-color: #00CC14;
+        --primary-heart-color: #ff0000;
+        --primary-hover-color: #00CC14;
+    }
+}
+    
+
+@media (prefers-color-scheme: light) {
+        :root {
+            --primary-font-weight-title: 700;
+            --primary-font-weight-text: 400;
+            --primary-background-color: #fff;
+            --primary-text-color: #000;
+            --primary-cover-image: url(../images/background_light.png);
+            --primary-background-image: 
+            repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px), 
+            repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+            linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+            --primary-border-color: #000;
+            fill: #000;
+            --primary-hover-color: #fff;
+            --primary-heart-contour-color: #000;
+            --primary-heart-color: #ff0000;
+        }
+    }
