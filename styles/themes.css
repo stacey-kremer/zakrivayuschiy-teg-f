@@ -13,6 +13,7 @@
         --primary-heart-contour-color: #00CC14;
         --primary-heart-color: #ff0000;
         --primary-hover-color: #00CC14;
+        --primary-text-stroke-color: #000;
     }
 
 :root.theme-light {
@@ -30,6 +31,7 @@
         --primary-hover-color: #fff;
         --primary-heart-contour-color: #000;
         --primary-heart-color: #ff0000;
+        --primary-text-stroke-color: #fff;
     }
 
 @media (prefers-color-scheme: dark) {
@@ -48,6 +50,7 @@
         --primary-heart-contour-color: #00CC14;
         --primary-heart-color: #ff0000;
         --primary-hover-color: #00CC14;
+        --primary-text-stroke-color: #000;
     }
 }
     
@@ -68,5 +71,6 @@
             --primary-hover-color: #fff;
             --primary-heart-contour-color: #000;
             --primary-heart-color: #ff0000;
+            --primary-text-stroke-color: #fff;
         }
     }
